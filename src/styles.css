@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Bitter;
+    src: url(./assets/fonts/Bitter-Regular.woff2) format(woff2),
+        url(./assets/fonts/Bitter-Regular.woff) format(woff);
+}
+
+@font-face {
+    font-family: Gelion;
+    src: url(./assets/fonts/Gelion-Regular.woff2) format(woff2),
+        url(./assets/fonts/Gelion-Regular.woff) format(woff);
+}
