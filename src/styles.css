@@ -63,12 +63,23 @@ header {
     border: 1px solid red;
 }
 
-section.projects-section {
+section.two {
     border: 1px solid green;
 }
 
-section.contact-section {
+section.three {
     border: 1px solid blue;
+}
+
+header, main, footer {
+    max-width: 85%;
+}
+
+.organizer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 /* Header */
@@ -78,7 +89,7 @@ section.contact-section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 16px;
+    margin: 3rem 0rem 3rem 0rem;
 }
 
 .main-pic-wrapper {
@@ -106,7 +117,7 @@ section.contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin: 0.5rem 0 0.5rem 0;
     padding: 16px;
     background: white;
 }
@@ -125,7 +136,6 @@ section.contact-section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px;
     gap: 1.3rem;
 }
 
@@ -146,4 +156,36 @@ section.contact-section {
 
 .text-link:hover, .text-link:focus {
     cursor: pointer;
+}
+
+/* My Work Section */
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.project-img {
+    padding: 5px;
+}
+
+.project-content {
+    padding: 0 0.5rem 0.5rem 0.5rem;
 }
