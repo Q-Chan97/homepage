@@ -126,6 +126,10 @@ main {
     margin-bottom: 0.5rem;
 }
 
+.about-me-wrapper nav {
+    margin-top: 1rem;
+}
+
 .about-me-text {
     text-align: center;
     font-size: 1.2rem;
@@ -265,7 +269,7 @@ main {
 
       .main-pic {
         border: none;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
       }
 
       .my-name {
@@ -292,7 +296,7 @@ main {
       .about-me-text {
         text-align: justify;
         font-size: 1.5rem;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
       }
 
       .heading-title {
@@ -320,5 +324,63 @@ main {
         min-width: initial;
         max-width: 360px;
       }
-  }
+}
+
+/* Desktop Media Query */
+@media (min-width: 1024px) {
+    header, main {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+
+    .main-pic-wrapper {
+        position: relative;
+        margin: 0;
+        z-index: 1;
+        min-width: 380px;
+    }
+
+    .main-pic {
+        min-width: 380px;
+    }
+
+    .my-name {
+        font-size: 3.4rem;
+        top: 2%;
+        right: initial;
+        left: 2%;
+        width: fit-content;
+    }
+
+    .about-me-wrapper {
+        display: block;
+        position: relative;
+        align-self: center;
+        background-color: white;
+        padding: 2rem 2rem 3rem 2rem;
+        margin: 0;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-me-wrapper h2 {
+        text-align: left;
+        font-size: 2rem;
+        background-color: transparent;
+     }
+
+    .about-me-wrapper nav {
+        float: right;
+    }
+
+    .about-me-text {
+        box-shadow: none;
+    }
+}
   
