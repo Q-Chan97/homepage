@@ -47,6 +47,7 @@ body {
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
+    max-inline-size: 100%;
 }
 
 input, button, textarea, select {
@@ -196,7 +197,14 @@ main {
 }
 
 .project-img {
+    width: 100%;
     padding: 5px;
+}
+
+.project-title {
+    font-family: Bitter, Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .project-content {
@@ -205,11 +213,14 @@ main {
 
 /* Footer/Contact */
 
+#contact-section {
+    background-color: var(--primary-color);
+}
+
 .contact-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--primary-color);
     color: white;
     gap: 1rem;
     padding: 1rem 1rem 5rem 1rem;
@@ -226,20 +237,17 @@ main {
 }
 
 .copyright {
+    text-align: center;
     font-size: 1rem;
     font-style: italic;
     font-weight: bold;
     margin: 1rem;
 }
 
-.footer-image {
-    flex: 2rem;
-}
-
 /* Tablet Media Query */
 @media (min-width: 600px) {
 
-    header, main, footer {
+    header, main {
         max-width: 85%;
         width: 85%;
     }
@@ -288,12 +296,29 @@ main {
       }
 
       .heading-title {
-        font-size: 2rem;
+        font-size: 1.9rem;
         text-align: left;
       }
 
       .header-wrapper nav ul.links {
         justify-content: center;
+      }
+
+      .projects-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      #contact-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1.5rem;
+        gap: 1.5rem;
+      }
+
+      .footer-image {
+        min-width: initial;
+        max-width: 360px;
       }
   }
   
