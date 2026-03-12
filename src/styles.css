@@ -352,10 +352,10 @@ main {
     }
 
     .my-name {
-        font-size: 3.4rem;
+        font-size: 4rem;
         top: 2%;
         right: initial;
-        left: 2%;
+        left: 5%;
         width: fit-content;
     }
 
@@ -381,6 +381,31 @@ main {
 
     .about-me-text {
         box-shadow: none;
+    }
+
+    .projects-wrapper {
+        padding: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-card {
+        padding: 0 1.3rem 1.3rem 1.3rem;
+    }
+
+    .footer-image {
+        max-width: 600px;
+    }
+
+    .contact-wrapper {
+        gap: 2rem;
+    }
+    
+    .contact-wrapper h2 {
+        font-size: 2.5rem;
+    }
+
+    .project-content, .contact-wrapper {
+        font-size: 1.3rem;
     }
 }
   
