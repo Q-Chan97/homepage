@@ -61,16 +61,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* Basic Layouts */
 
 header {
-    border: 1px solid red;
     margin: 3rem 2rem;
-}
-
-section.two {
-    border: 1px solid green;
-}
-
-section.three {
-    border: 1px solid blue;
 }
 
 header, main {
