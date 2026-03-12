@@ -1,5 +1,19 @@
 # homepage
 
+This is a mock portfolio homepage project as part of The Odin Project's Advanced HTML and CSS course. This project is meant to showcase my understanding of: 
+   - Web accessibility through proper use of semantic HTML elements, color contrast, and aria attributes.
+
+   - Responsive web design by implementing fluid layouts that respond to screen size with media queries and responsive images using the picture tag.
+
+   - Animations by implementing a subtle transition effect to project cards and the bottom footer
+
+The languages I used for this project are: 
+    HTML5
+    CSS
+    Javascript (for animation effect)
+
+<!-- Credits -->
+
 Penguin photos by Jean van der Meulen on Pexels
 
 Github and LinkedIn icons sourced from Devicon
@@ -7,6 +21,8 @@ Github and LinkedIn icons sourced from Devicon
 Bluesky icon created by Bluesky Social PBC
 
 Bitter font and mail, call, and open icons created by Google
+
+Home icon Created by bentraynham on Material Designs
 
 Gelion font designed by Deni Anggara
 
