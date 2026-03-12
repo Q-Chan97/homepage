@@ -182,6 +182,15 @@ main {
     gap: 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+    transition: transform 400ms ease-out, opacity 400ms ease-out;
+    transform: translateY(20px);
+}
+
+.project-card.show {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .project-header {
@@ -210,6 +219,15 @@ main {
 
 #contact-section {
     background-color: var(--primary-color);
+
+    opacity: 0;
+    transition: transform 400ms ease-out, opacity 400ms ease-out;
+    transform: translateY(20px);
+}
+
+#contact-section.show {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .contact-wrapper {
